@@ -65,7 +65,7 @@ thicker_path = imdilate(boundaries, strel('disk', 4));
 % Overlay the cleaned and thicker path on the original grayscale image
 % converting rgb to gray scale 
 I_rgb = cat(3, I, I, I); 
-P = imoverlay(I_rgb, thicker_path, [1 0 1]);
+P = imoverlay(I_rgb, thicker_path, [1 0 0]);
 
 % Display and save the resulting image
 figure;
